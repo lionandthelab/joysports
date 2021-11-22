@@ -49,6 +49,11 @@ dependencies:
   shared_preferences: ^2.0.6
   state_notifier: ^0.7.0
 
+  nfc_in_flutter:
+    git:
+      url: git://github.com/semlette/nfc_in_flutter.git
+      ref: master
+
 dev_dependencies:
   flutter_driver:
     sdk: flutter
@@ -64,7 +69,6 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
