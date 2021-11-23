@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:starter_architecture_flutter_firebase/services/shared_preferences_service.dart';
+import 'package:joysports/services/shared_preferences_service.dart';
 import 'package:mocktail/mocktail.dart';
 import 'mocks.dart';
 

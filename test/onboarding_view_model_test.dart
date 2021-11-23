@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:starter_architecture_flutter_firebase/app/onboarding/onboarding_view_model.dart';
+import 'package:joysports/app/onboarding/onboarding_view_model.dart';
 import 'package:mocktail/mocktail.dart';
 import 'mocks.dart';
 

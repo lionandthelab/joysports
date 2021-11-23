@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:starter_architecture_flutter_firebase/app/home/jobs/empty_content.dart';
-import 'package:starter_architecture_flutter_firebase/app/top_level_providers.dart';
+import 'package:joysports/app/home/jobs/empty_content.dart';
+import 'package:joysports/app/top_level_providers.dart';
 
 class AuthWidget extends ConsumerWidget {
   const AuthWidget({
@@ -25,8 +25,8 @@ class AuthWidget extends ConsumerWidget {
       ),
       error: (_, __) => const Scaffold(
         body: EmptyContent(
-          title: 'Something went wrong',
-          message: 'Can\'t load data right now.',
+          title: '문제가 발생했습니다.',
+          message: '정보를 가져올 수 없습니다.',
         ),
       ),
     );

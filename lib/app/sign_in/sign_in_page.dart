@@ -2,14 +2,14 @@ import 'dart:math';
 
 import 'package:alert_dialogs/alert_dialogs.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:starter_architecture_flutter_firebase/app/top_level_providers.dart';
-import 'package:starter_architecture_flutter_firebase/app/sign_in/sign_in_view_model.dart';
-import 'package:starter_architecture_flutter_firebase/app/sign_in/sign_in_button.dart';
-import 'package:starter_architecture_flutter_firebase/constants/keys.dart';
-import 'package:starter_architecture_flutter_firebase/constants/strings.dart';
+import 'package:joysports/app/top_level_providers.dart';
+import 'package:joysports/app/sign_in/sign_in_view_model.dart';
+import 'package:joysports/app/sign_in/sign_in_button.dart';
+import 'package:joysports/constants/keys.dart';
+import 'package:joysports/constants/strings.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:starter_architecture_flutter_firebase/routing/app_router.dart';
+import 'package:joysports/routing/app_router.dart';
 
 final signInModelProvider = ChangeNotifierProvider<SignInViewModel>(
   (ref) => SignInViewModel(auth: ref.watch(firebaseAuthProvider)),
@@ -30,14 +30,14 @@ class SignInPage extends ConsumerWidget {
     });
     return SignInPageContents(
       viewModel: signInModel,
-      title: 'Architecture Demo',
+      title: '조이스포츠',
     );
   }
 }
 
 class SignInPageContents extends StatelessWidget {
   const SignInPageContents(
-      {Key? key, required this.viewModel, this.title = 'Architecture Demo'})
+      {Key? key, required this.viewModel, this.title = '조이스포츠'})
       : super(key: key);
   final SignInViewModel viewModel;
   final String title;

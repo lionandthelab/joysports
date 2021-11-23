@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:starter_architecture_flutter_firebase/app/home/account/account_page.dart';
-import 'package:starter_architecture_flutter_firebase/app/home/cupertino_home_scaffold.dart';
-import 'package:starter_architecture_flutter_firebase/app/home/entries/entries_page.dart';
-import 'package:starter_architecture_flutter_firebase/app/home/jobs/jobs_page.dart';
-import 'package:starter_architecture_flutter_firebase/app/home/tab_item.dart';
+import 'package:joysports/app/home/account/account_page.dart';
+import 'package:joysports/app/home/cupertino_home_scaffold.dart';
+import 'package:joysports/app/home/entries/entries_page.dart';
+import 'package:joysports/app/home/plays/plays_page.dart';
+import 'package:joysports/app/home/jobs/jobs_page.dart';
+import 'package:joysports/app/home/tab_item.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -11,9 +12,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  TabItem _currentTab = TabItem.jobs;
+  TabItem _currentTab = TabItem.plays;
 
   final Map<TabItem, GlobalKey<NavigatorState>> navigatorKeys = {
+    TabItem.plays: GlobalKey<NavigatorState>(),
     TabItem.jobs: GlobalKey<NavigatorState>(),
     TabItem.entries: GlobalKey<NavigatorState>(),
     TabItem.account: GlobalKey<NavigatorState>(),
@@ -21,6 +23,7 @@ class _HomePageState extends State<HomePage> {
 
   Map<TabItem, WidgetBuilder> get widgetBuilders {
     return {
+      TabItem.plays: (_) => PlaysPage(),
       TabItem.jobs: (_) => JobsPage(),
       TabItem.entries: (_) => EntriesPage(),
       TabItem.account: (_) => AccountPage(),

@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:starter_architecture_flutter_firebase/services/shared_preferences_service.dart';
+import 'package:joysports/services/shared_preferences_service.dart';
 
 class MockFirebaseAuth extends Mock implements FirebaseAuth {}
 

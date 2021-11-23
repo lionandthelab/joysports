@@ -2,11 +2,11 @@ import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:starter_architecture_flutter_firebase/app/top_level_providers.dart';
-import 'package:starter_architecture_flutter_firebase/common_widgets/avatar.dart';
+import 'package:joysports/app/top_level_providers.dart';
+import 'package:joysports/common_widgets/avatar.dart';
 import 'package:alert_dialogs/alert_dialogs.dart';
-import 'package:starter_architecture_flutter_firebase/constants/keys.dart';
-import 'package:starter_architecture_flutter_firebase/constants/strings.dart';
+import 'package:joysports/constants/keys.dart';
+import 'package:joysports/constants/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:pedantic/pedantic.dart';
 

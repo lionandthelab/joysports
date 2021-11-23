@@ -6,14 +6,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pedantic/pedantic.dart';
-import 'package:starter_architecture_flutter_firebase/app/home/job_entries/entry_list_item.dart';
-import 'package:starter_architecture_flutter_firebase/app/home/job_entries/entry_page.dart';
-import 'package:starter_architecture_flutter_firebase/app/home/jobs/edit_job_page.dart';
-import 'package:starter_architecture_flutter_firebase/app/home/jobs/list_items_builder.dart';
-import 'package:starter_architecture_flutter_firebase/app/home/models/entry.dart';
-import 'package:starter_architecture_flutter_firebase/app/home/models/job.dart';
-import 'package:starter_architecture_flutter_firebase/app/top_level_providers.dart';
-import 'package:starter_architecture_flutter_firebase/routing/cupertino_tab_view_router.dart';
+import 'package:joysports/app/home/job_entries/entry_list_item.dart';
+import 'package:joysports/app/home/job_entries/entry_page.dart';
+import 'package:joysports/app/home/jobs/edit_job_page.dart';
+import 'package:joysports/app/home/jobs/list_items_builder.dart';
+import 'package:joysports/app/home/models/entry.dart';
+import 'package:joysports/app/home/models/job.dart';
+import 'package:joysports/app/top_level_providers.dart';
+import 'package:joysports/routing/cupertino_tab_view_router.dart';
 
 class JobEntriesPage extends StatelessWidget {
   const JobEntriesPage({required this.job});

@@ -2,7 +2,7 @@ import 'package:custom_buttons/custom_buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:starter_architecture_flutter_firebase/app/onboarding/onboarding_view_model.dart';
+import 'package:joysports/app/onboarding/onboarding_view_model.dart';
 
 class OnboardingPage extends ConsumerWidget {
   Future<void> onGetStarted(BuildContext context, WidgetRef ref) async {
@@ -20,21 +20,21 @@ class OnboardingPage extends ConsumerWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
-              'Track your time.\nBecause time counts.',
+              '조이스포츠',
               style: Theme.of(context).textTheme.headline4,
               textAlign: TextAlign.center,
             ),
             FractionallySizedBox(
               widthFactor: 0.5,
-              child: SvgPicture.asset('assets/time-tracking.svg',
-                  semanticsLabel: 'Time tracking logo'),
+              child:
+                  SvgPicture.asset('assets/logo.svg', semanticsLabel: '조이스포츠'),
             ),
             CustomRaisedButton(
               onPressed: () => onGetStarted(context, ref),
               color: Colors.indigo,
               borderRadius: 30,
               child: Text(
-                'Get Started',
+                '시작하기',
                 style: Theme.of(context)
                     .textTheme
                     .headline5!

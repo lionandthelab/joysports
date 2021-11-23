@@ -1,16 +1,16 @@
 //import 'package:auth_widget_builder/auth_widget_builder.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:starter_architecture_flutter_firebase/app/auth_widget.dart';
-import 'package:starter_architecture_flutter_firebase/app/home/home_page.dart';
-import 'package:starter_architecture_flutter_firebase/app/onboarding/onboarding_page.dart';
-import 'package:starter_architecture_flutter_firebase/app/onboarding/onboarding_view_model.dart';
-import 'package:starter_architecture_flutter_firebase/app/top_level_providers.dart';
-import 'package:starter_architecture_flutter_firebase/app/sign_in/sign_in_page.dart';
-import 'package:starter_architecture_flutter_firebase/routing/app_router.dart';
+import 'package:joysports/app/auth_widget.dart';
+import 'package:joysports/app/home/home_page.dart';
+import 'package:joysports/app/onboarding/onboarding_page.dart';
+import 'package:joysports/app/onboarding/onboarding_view_model.dart';
+import 'package:joysports/app/top_level_providers.dart';
+import 'package:joysports/app/sign_in/sign_in_page.dart';
+import 'package:joysports/routing/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:starter_architecture_flutter_firebase/services/shared_preferences_service.dart';
+import 'package:joysports/services/shared_preferences_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

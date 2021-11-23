@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:starter_architecture_flutter_firebase/app/home/tab_item.dart';
-import 'package:starter_architecture_flutter_firebase/constants/keys.dart';
-import 'package:starter_architecture_flutter_firebase/routing/cupertino_tab_view_router.dart';
+import 'package:joysports/app/home/tab_item.dart';
+import 'package:joysports/constants/keys.dart';
+import 'package:joysports/routing/cupertino_tab_view_router.dart';
 
 @immutable
 class CupertinoHomeScaffold extends StatelessWidget {
@@ -26,6 +26,7 @@ class CupertinoHomeScaffold extends StatelessWidget {
         key: const Key(Keys.tabBar),
         currentIndex: currentTab.index,
         items: [
+          _buildItem(TabItem.plays),
           _buildItem(TabItem.jobs),
           _buildItem(TabItem.entries),
           _buildItem(TabItem.account),

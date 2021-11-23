@@ -1,5 +1,5 @@
-name: starter_architecture_flutter_firebase
-description: A new Flutter project.
+name: joysports
+description: JoySports App.
 publish_to: none
 
 # The following defines the version and build number for your application.
@@ -75,7 +75,7 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/time-tracking.svg
+    - assets/logo.svg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
