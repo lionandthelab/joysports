@@ -11,6 +11,7 @@ import 'package:joysports/app/top_level_providers.dart';
 import 'package:joysports/constants/strings.dart';
 import 'package:pedantic/pedantic.dart';
 import 'package:joysports/services/firestore_database.dart';
+import '../../../colors.dart' as color;
 
 final jobsStreamProvider = StreamProvider.autoDispose<List<Job>>((ref) {
   final database = ref.watch(databaseProvider)!;
@@ -35,6 +36,7 @@ class JobsPage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
+      backgroundColor: color.AppColor.homePageBackground,
       appBar: AppBar(
         title: const Text(Strings.jobs),
         actions: <Widget>[

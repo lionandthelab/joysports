@@ -31,7 +31,7 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final firebaseAuth = ref.watch(firebaseAuthProvider);
     return MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.indigo),
+      theme: ThemeData(fontFamily: 'Jua', primarySwatch: Colors.indigo),
       debugShowCheckedModeBanner: false,
       home: AuthWidget(
         nonSignedInBuilder: (_) => Consumer(
