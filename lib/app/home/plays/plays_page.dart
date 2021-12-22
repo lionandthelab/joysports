@@ -18,6 +18,7 @@ class PlaysPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.green[300],
           title: const Text(Strings.plays),
           actions: <Widget>[
             IconButton(
@@ -142,6 +143,8 @@ class _NfcPlayState extends State<NfcPlay> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: Colors.green[300],
         primarySwatch: Colors.grey,
       ),
       home: Scaffold(
@@ -233,7 +236,7 @@ class _NfcPlayState extends State<NfcPlay> {
               );
             },
           ),
-          backgroundColor: _mode == 1 ? Colors.blue[200] : Colors.red[200]),
+          backgroundColor: _mode == 1 ? Colors.blue[200] : Colors.white10),
     );
   }
 }

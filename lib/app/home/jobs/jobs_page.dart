@@ -38,6 +38,7 @@ class JobsPage extends ConsumerWidget {
     return Scaffold(
       backgroundColor: color.AppColor.homePageBackground,
       appBar: AppBar(
+        backgroundColor: Colors.green[300],
         title: const Text(Strings.jobs),
         actions: <Widget>[
           IconButton(

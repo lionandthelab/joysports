@@ -31,7 +31,7 @@ class OnboardingPage extends ConsumerWidget {
             ),
             CustomRaisedButton(
               onPressed: () => onGetStarted(context, ref),
-              color: Colors.indigo,
+              color: Colors.green[300],
               borderRadius: 30,
               child: Text(
                 '시작하기',

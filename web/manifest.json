@@ -1,10 +1,10 @@
 {
-    "name": "joysports",
+    "name": "조이스포츠",
     "short_name": "joysports",
     "start_url": ".",
-    "display": "minimal-ui",
+    "display": "fullscreen",
     "background_color": "#0175C2",
-    "theme_color": "#0175C2",
+    "theme_color": "#3cd3ad",
     "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,

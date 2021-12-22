@@ -44,7 +44,8 @@ class AccountPage extends ConsumerWidget {
     final user = firebaseAuth.currentUser!;
     return Scaffold(
       appBar: AppBar(
-        title: const Text(Strings.accountPage),
+                backgroundColor: Colors.green[300],
+title: const Text(Strings.accountPage),
         actions: <Widget>[
           TextButton(
             key: const Key(Keys.logout),

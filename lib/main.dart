@@ -11,6 +11,7 @@ import 'package:joysports/routing/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:joysports/services/shared_preferences_service.dart';
+import 'package:flutter/services.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,9 +30,15 @@ Future<void> main() async {
 class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
+
     final firebaseAuth = ref.watch(firebaseAuthProvider);
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'Jua', primarySwatch: Colors.indigo),
+      theme: ThemeData(
+          fontFamily: 'Jua',
+          brightness: Brightness.light,
+          primaryColor: Colors.green[300],
+          primarySwatch: Colors.grey),
       debugShowCheckedModeBanner: false,
       home: AuthWidget(
         nonSignedInBuilder: (_) => Consumer(

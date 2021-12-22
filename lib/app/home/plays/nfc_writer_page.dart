@@ -72,14 +72,15 @@ class _NfcWriterPageState extends State<NfcWriterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Write NFC example"),
+        backgroundColor: Colors.green[300],
+        title: const Text("NFC 쓰기"),
       ),
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: <Widget>[
           Center(
             child: OutlinedButton(
-              child: const Text("Add record"),
+              child: const Text("레코드 추가"),
               onPressed: _addRecord,
             ),
           ),
@@ -89,17 +90,17 @@ class _NfcWriterPageState extends State<NfcWriterPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text("Record", style: Theme.of(context).textTheme.bodyText1),
+                  Text("레코드", style: Theme.of(context).textTheme.bodyText1),
                   TextFormField(
                     controller: record.mediaTypeController,
                     decoration: InputDecoration(
-                      hintText: "Media type",
+                      hintText: "타입",
                     ),
                   ),
                   TextFormField(
                     controller: record.payloadController,
                     decoration: InputDecoration(
-                      hintText: "Payload",
+                      hintText: "내용",
                     ),
                   )
                 ],
@@ -107,7 +108,7 @@ class _NfcWriterPageState extends State<NfcWriterPage> {
             ),
           Center(
             child: ElevatedButton(
-              child: const Text("Write to tag"),
+              child: const Text("태그에 쓰기"),
               onPressed: _records.length > 0 ? () => _write(context) : null,
             ),
           ),

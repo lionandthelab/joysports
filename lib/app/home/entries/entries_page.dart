@@ -21,7 +21,8 @@ class EntriesPage extends ConsumerWidget {
     final entriesTileModelStream = ref.watch(entriesTileModelStreamProvider);
     return Scaffold(
       appBar: AppBar(
-        title: const Text(Strings.entries),
+                backgroundColor: Colors.green[300],
+title: const Text(Strings.entries),
         elevation: 2.0,
       ),
       body: ListItemsBuilder<EntriesListTileModel>(
